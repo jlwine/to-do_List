@@ -18,7 +18,17 @@
             <button type="submit" name="sendTsk" id="sendTask" class="btn btn success">Отправить</button>
         </form>
 
+        <?php
+        $dsn = 'mysql:host=localhost;dbname=to-do';
+        $pdo = new PDO($dsn, 'mysql', '');
 
+        echo '<ul class="ull">';
+        $query = $pdo -> query('SELECT * FROM `tasks` ORDER BY `id` DESC');
+        while($row = $query->fetch(PDO::FETCH_OBJ)) {
+            echo '<li class="lii"><b>'.$row->task.'</b><a href="/delete.php?id='.$row->id.'"><button>Удалить</button></a></li>';
+        }
+        echo '</ul>'
+        ?>
 
     </div>
 
