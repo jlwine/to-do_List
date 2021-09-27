@@ -20,7 +20,7 @@
         </nav>
         <div class="btns">
         <a class="login" href="#"><button class="Auth">Login</button></a>
-        <a class="sign" href="#"><button class="Register">Sign up</button></a>
+        <a class="sign" href="signup.php"><button class="Register">Sign up</button></a>
         </div>
     </header>
 
