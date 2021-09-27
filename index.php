@@ -6,16 +6,30 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>List of tasks</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <header class="header">
+        <img class="logo" src="img/logo.png" alt="logo" width="50" height="50">
+        <nav>
+            <ul class="nav__links">
+                <li><a href="#">Services</a></li>
+                <li><a href="#">project</a></li>
+                <li><a href="#">about</a></li>
+            </ul>
+        </nav>
+        <div class="btns">
+        <a class="login" href="#"><button class="Auth">Login</button></a>
+        <a class="sign" href="#"><button class="Register">Sign up</button></a>
+        </div>
+    </header>
+
+<div class="container">
 
         <h1>Список дел</h1>
         <form action="/add.php" method="post">
             <input type="text" name="task" id="task" placeholder="Нужно будет.." class="form-control">
-            <button type="submit" name="sendTsk" id="sendTask" class="btn btn success">Отправить</button>
+            <button type="submit" name="sendTsk" id="sendTask" class="btn btn success">Добавить</button>
         </form>
 
         <?php
@@ -30,7 +44,7 @@
         echo '</ul>'
         ?>
 
-    </div>
+</div>
 
 </body>
 </html>
