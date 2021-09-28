@@ -133,4 +133,17 @@ a {
     border-radius: 0px 0px 10px 10px;
 }
 
+.msg {
+    border: 2px solid #f6ff00;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    width: 20%;
+    margin: 0 auto;
+    background-color: #e5e5e5;
+
+}
+
 

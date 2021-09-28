@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!doctype html>
 <html lang="ru">
 <head>
@@ -47,9 +50,12 @@
     <div class="container signin">
         <p>Уже зарегистрированы? <a href="auth.php">Войти</a>.</p>
     </div>
-    <p class="msg">
-        Какое-то сообщение
-    </p>
+    <?php
+    if ($_SESSION['message']) {
+        echo '<p class="msg"> '. $_SESSION['message'] . ' </p>';
+    }
+    unset ($_SESSION['message']);
+    ?>
 </form>
 
 </body>
