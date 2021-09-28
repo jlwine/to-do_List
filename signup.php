@@ -16,18 +16,17 @@
     <img class="logo" src="img/logo.png" alt="logo" width="50" height="50">
     <nav>
         <ul class="nav__links">
-            <li><a href="#">Services</a></li>
-            <li><a href="#">project</a></li>
-            <li><a href="#">about</a></li>
+            <li><a href="#">Обо мне</a></li>
+            <li><a href="#">Обратная связь</a></li>
         </ul>
     </nav>
     <div class="btns">
-        <a class="login" href="#"><button class="Auth">Login</button></a>
+        <a class="login" href="auth.php"><button class="Auth">Login</button></a>
         <a class="sign" href="signup.php"><button class="Register">Sign up</button></a>
     </div>
 </header>
 
-<form action="vendor/signin.php" method="post">
+<form action="vendor/signin.php" method="post" enctype="multipart/form-data">
     <div class="container">
         <h1>Регистрация</h1>
         <p>Пожалуйста заполните все поля для регистрации.</p>
@@ -36,6 +35,13 @@
         <label for="email"><b>Электронная почта</b></label>
         <input type="text" placeholder="Введите ваш email" name="email" required>
 
+        <label for="login"><b>Логин</b></label>
+        <input type="text" placeholder="Придумайте ваш логин" name="login" required>
+
+        <label><b>Изображение профиля</b></label>
+        <input type="file" name="avatar">
+        <br>
+        <br>
         <label for="psw"><b>Пароль</b></label>
         <input type="password" placeholder="Введите ваш пароль" name="psw" required>
 

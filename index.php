@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="ru">
 <head>
@@ -13,13 +14,12 @@
         <img class="logo" src="img/logo.png" alt="logo" width="50" height="50">
         <nav>
             <ul class="nav__links">
-                <li><a href="#">Services</a></li>
-                <li><a href="#">project</a></li>
-                <li><a href="#">about</a></li>
+                <li><a href="#">Обо мне</a></li>
+                <li><a href="#">Обратная связь</a></li>
             </ul>
         </nav>
         <div class="btns">
-        <a class="login" href="#"><button class="Auth">Login</button></a>
+        <a class="login" href="auth.php"><button class="Auth">Login</button></a>
         <a class="sign" href="signup.php"><button class="Register">Sign up</button></a>
         </div>
     </header>

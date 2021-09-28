@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+body {
+    background: url(/img/backgr.jpg) no-repeat;
+
+}
+/*Nav bar*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    background-color: #24252A;
+    margin-bottom: 50px;
+}
+.logo {
+    cursor: pointer;
+    border-radius: 30px;
+}
+.nav__links {
+    list-style: none;
+}
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+.nav__links li a:hover {
+    color: #0088a9;
+}
+button {
+    padding: 9px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.Register {
+    border-radius: 2px;
+    border: 1px solid #d5e50d;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out 0s;
+}
+.Auth {
+    border-radius: 2px;
+    background-color: #0088a9;
+    padding: 10px 31px 10px 31px;
+    transition: all 0.3s ease-in-out 0s;
+}
+.Register:hover {
+    background-color: #edff10;
+    color: black;
+}
+.Auth:hover {
+    background-color: #00ceff;
+    color: black;
+}
+* {box-sizing: border-box}
+
+
+.container {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 16px;
+    width: 20%;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-color: #f2f3f4;
+}
+
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+
+.registerbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    opacity:1;
+}
+
+
+a {
+    color: dodgerblue;
+}
+
+
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.msg {
+    border: 2px solid #f6ff00;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    width: 20%;
+    margin: 0 auto;
+    background-color: #e5e5e5;
+
+}
