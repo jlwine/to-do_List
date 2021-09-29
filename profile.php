@@ -12,11 +12,11 @@ session_start();
     <link rel="stylesheet" href="styleProfile.css"
 </head>
 <body>
-    <form>
+    <div class="container">
         <img style="border-radius: 50px;" src="<?=$_SESSION['user']['avatar'] ?>" width="200" alt="">
         <h2 style="margin: 10px 0;"><?= $_SESSION['user']['login'] ?></h2>
         <a href="#"><?= $_SESSION['user']['email']?></a>
         <a href="auth.php" class="logout">Выйти</a>
-    </form>
+    </div>
 </body>
 </html>
