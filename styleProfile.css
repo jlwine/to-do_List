@@ -1,6 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+body {
+    background: url(/img/backgr.jpg) no-repeat;
+
+}
+/*Nav bar*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    background-color: #24252A;
+}
+.logo {
+    cursor: pointer;
+    border-radius: 30px;
+}
+.nav__links {
+    list-style: none;
+}
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+.nav__links li a:hover {
+    color: #0088a9;
+}
 .logout {
+    font-weight: bold;
     color: #b25757;
+    justify-content: center;
+    display: flex;
+    transition: all 0.3s ease 0s;
+    padding: 14px;
+    margin-top: -25px
+}
+.logout:hover {
+    background-color: #c5c5c5;
+    color: red;
+    font-weight: bold;
+}
+.logout:hover:first-child {
+    border-radius: 0px 0px 5px 5px;
+}
+.logout:hover:last-child {
+    border-radius: 0px 0px 5px 5px;
 }
 .container {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #ffffff;
+    display: block;
+    text-align: center;
     margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 5px;
+    box-shadow: 5px 10px 35px black;
+    width: 300px;
+    height: 425px;
+    padding-top: 20px;
+}
+.login {
+    color: #b25757;
+
+}
+.email {
+    float: left;
+    padding: 15px 7px 15px 10px;
+    color: black;
+    border-bottom: 2px solid #c5c5c5;
+    display: flex;
+    transition: all 0.3s ease 0s;
+    border-top: 2px solid #c5c5c5;
+}
+.emailUser {
+    padding-left: 110px;
+}
+.email:hover {
+    background-color: #c5c5c5;
+    font-weight: bold;
+}
+.my_tasks {
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    color: #b25757;
+}
+.my_tasks:hover {
+    background-color: #c5c5c5;
+    color: red;
+    font-weight: bold;
 }
