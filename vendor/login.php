@@ -20,7 +20,7 @@
             "avatar" => $user['avatar'],
             "email" => $user['email'],
         ];
-        header('Location: ../profile.php');
+        header("Location: ../profile.php?id=" . $user['id']);
 
 
     } else {

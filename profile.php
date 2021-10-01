@@ -27,7 +27,7 @@ session_start();
         <h2 style="margin: 10px 0;" class="login"><b><?= $_SESSION['user']['login'] ?></b></h2></h2>
         <br>
         <a href="#" class="email">Email: <div class="emailUser"><?= $_SESSION['user']['email']?></div></a><br>
-        <a href="index.php" class="my_tasks">Мои задачи</a><br>
+        <a href="index.php?id=<?=$_SESSION['user']['id']; ?>" class="my_tasks">Мои задачи</a><br>
         <a href="auth.php" class="logout">Выйти</a>
     </div>
 </body>
