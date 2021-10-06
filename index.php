@@ -35,21 +35,30 @@ session_start();
         </form>
 
         <?php
-//        $idUser = $_SESSION['user']['id'];
-        $idUser = $_GET['id'];
-        echo $idUser;
         $dsn = 'mysql:host=localhost;dbname=to-do';
-        $pdo = new PDO($dsn, 'mysql', '');
+        $pdo = new PDO($dsn, 'mysql', '', [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
+        $idUser = $_GET['id'];        
 
         echo '<ul class="ull">';
-        $query = $pdo -> query('SELECT * FROM `tasks` WHERE `id_user` =' . $idUser . 'ORDER BY `id` DESC');
+        $query = $pdo -> query('SELECT * FROM `tasks` WHERE `id_user` ='.$idUser/*.'ORDER BY `id` DESC'*/);
         while($row = $query->fetch(PDO::FETCH_OBJ)) {
             echo '<li class="lii"><b>'.$row->task.'</b><a href="/delete.php?id='.$row->id.'"><button>Удалить</button></a></li>';
         }
         echo '</ul>'
+
+        // $connect = mysqli_connect('localhost', 'mysql', '', 'to-do');
+        // $idUser = $_GET['id'];
+        
+        // echo '<ul class="ull">';
+        // $query = $connect -> query('SELECT * FROM `tasks` WHERE `id_user` ='.$idUser.'ORDER BY `id` DESC');
+        // while($row = $query->fetch(PDO::FETCH_OBJ)) {
+        //     echo '<li class="lii"><b>'.$row->task.'</b><a href="/delete.php?id='.$row->id.'"><button>Удалить</button></a></li>';
+        // }
+        // echo '</ul>'
         ?>
 
 </div>
+
 
 </body>
 </html>
