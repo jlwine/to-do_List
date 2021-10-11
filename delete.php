@@ -1,7 +1,10 @@
 <?php
+    session_start();
+
     $dsn = 'mysql:host=localhost;dbname=to-do';
     $pdo = new PDO($dsn, 'mysql', '');
-    $idUser = $_SESSION['user']['id'];
+    $id_user = $_SESSION['id'];
+    
 
     $id = $_GET['id'];
 
@@ -9,4 +12,4 @@
     $query = $pdo->prepare($sql);
     $query->execute([$id]);
 
-    header("Location: ../index.php?id=" . $idUser);
+    header("Location: ../index.php?id=".$id_user);
