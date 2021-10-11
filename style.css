@@ -143,14 +143,23 @@ h1 {
     color: white;
     font-size: 13px;
     background: #db5757;
-    position: relative;
-    left: 250px;
+    position: absolute;
+    right: 720px;
     border-radius: 5px;
 }
 
 .ull .lii button:hover {
     background: #a04141;
 }
-.btn_Submit {
-
+.profile_avatar {
+    position: absolute;
+    right: 390px;
+}
+.nickname {
+    position: absolute;
+    right: 290px;
+    transition: all 0.3s ease-in-out 0s;
+}
+.nickname:hover{
+    color: #FBF37C;
 }
