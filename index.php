@@ -37,7 +37,7 @@ $_SESSION['id'] = $id_user;
                  <a class="sign" href="signup.php"><button class="Register">Sign up</button></a>
                  </div>';
          } else {
-             echo '<a class="header" href="logout.php"><button class="Register">Exit</button></a>';
+             echo '<a class="header" href="auth.php"><button class="Register">Exit</button></a>';
          }
         ?>
         
