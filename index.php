@@ -46,9 +46,9 @@ $_SESSION['id'] = $id_user;
 
 <div class="container">
 
-        <h1>Список дел</h1>
+        <h1 style="color: white;">Список дел</h1>
         <form action="/add.php" method="post">
-            <input type="text" name="task" id="task" placeholder="Нужно будет.." class="form-control">
+            <input type="text" name="task" id="task" placeholder="Нужно будет..." class="form-control">
             <button type="submit" name="sendTsk" id="sendTask" class="btn btn success">Добавить</button>
         </form>
 
