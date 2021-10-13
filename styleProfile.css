@@ -44,12 +44,10 @@ header {
 .logout {
     font-weight: bold;
     color: #b25757;
-    justify-content: center;
-    display: flex;
     transition: all 0.3s ease 0s;
-    padding: 14px;
-    margin-top: -25px
+    padding: 25px 125px 25px 120px;
 }
+
 .logout:hover {
     background-color: #c5c5c5;
     color: red;
@@ -73,10 +71,52 @@ header {
     border-radius: 5px;
     box-shadow: 5px 10px 35px black;
     width: 300px;
-    height: 425px;
+    height: 505px;
     padding-top: 20px;
 }
-.login {
+.options {
+    display: table;
+    margin: 0 auto;
+    width: 300px;
+    height: 145px;
+}
+
+
+.email_color {
+    color: black;
+}
+.tasks {
+    padding: 25px 0px 25px 0px;
+}
+.exitBtn {
+    padding: 25px 0px 25px 0px;
+}
+.profile_options {
+    padding: 25px 0px 25px 0px;
+}
+.profile_style {
+    padding: 25px 66px 25px 60px;
+    color: #b25757;
+    transition: all 0.3s ease 0s;
+}
+.profile_style:hover {
+    background-color: #c5c5c5;
+    color: red;
+    font-weight: bold;
+}
+.my_tasks {
+    color: #b25757;
+    padding: 25px 104px 25px 95px;
+    transition: all 0.3s ease 0s;
+
+}
+.my_tasks:hover {
+    background-color: #c5c5c5;
+    color: red;
+    font-weight: bold;
+}
+
+/* .login {
     color: #b25757;
 
 }
@@ -102,4 +142,4 @@ header {
     background-color: #c5c5c5;
     color: red;
     font-weight: bold;
-}
+} */

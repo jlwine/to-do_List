@@ -161,7 +161,7 @@ h1 {
 }
 .nickname {
     position: absolute;
-    right: 290px;
+    right: 310px;
     transition: all 0.3s ease-in-out 0s;
 }
 .nickname:hover{

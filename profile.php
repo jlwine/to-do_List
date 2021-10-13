@@ -26,9 +26,20 @@ session_start();
         <br>
         <h2 style="margin: 10px 0;" class="login"><b><?= $_SESSION['user']['login'] ?></b></h2></h2>
         <br>
-        <a href="#" class="email">Email: <div class="emailUser"><?= $_SESSION['user']['email']?></div></a><br>
-        <a href="index.php?id=<?=$_SESSION['user']['id']; ?>" class="my_tasks">Мои задачи</a><br>
-        <a href="auth.php" class="logout">Выйти</a>
+        <div class="options">
+            <div class="email">
+                <a href="#" class="email_color">Email: <?= $_SESSION['user']['email']?></a><br>
+            </div>
+            <div class="tasks">
+                <a href="index.php?id=<?=$_SESSION['user']['id']; ?>" class="my_tasks">Мои задачи</a><br>
+            </div>
+            <div class="profile_options">
+                <a href="#" class="profile_style">Настройки профиля</a><br>
+            </div>
+            <div class="exitBtn">
+                <a href="auth.php" class="logout">Выйти</a>
+            </div>
+        </div>
     </div>
 </body>
 </html>

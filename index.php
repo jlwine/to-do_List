@@ -2,11 +2,6 @@
 session_start();
 $id_user = $_GET['id'];
 $_SESSION['id'] = $id_user;
-
-
-   
-
-
 ?>
 <!doctype html>
 <html lang="ru">
