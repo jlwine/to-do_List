@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+body {
+    background: url(/img/background.jpg) no-repeat;
+
+}
+/*Nav bar*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    background-color: #24252A;
+}
+.logo {
+    cursor: pointer;
+    border-radius: 30px;
+}
+.nav__links {
+    list-style: none;
+}
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+.nav__links li a:hover {
+    color: #0088a9;
+}
+.logout {
+    font-weight: bold;
+    color: #b25757;
+    transition: all 0.3s ease 0s;
+    padding: 25px 125px 25px 120px;
+}
+
+.logout:hover {
+    background-color: #c5c5c5;
+    color: red;
+    font-weight: bold;
+}
+.logout:hover:first-child {
+    border-radius: 0px 0px 5px 5px;
+}
+.logout:hover:last-child {
+    border-radius: 0px 0px 5px 5px;
+}
+.container {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #ffffff;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 5px;
+    box-shadow: 10px 6px 35px black;
+    width: 600px;
+    height: 600px;
+    padding-top: 20px;
+}
+.tittleSettings {
+    font-weight: bold;
+}
+.settings_name {
+    position: relative;
+    font-size: 22px;
+    font-weight: bold;
+    float: left;
+    margin: 0px 0px 0px 50px;
+}
+.setAvatar {
+    border-radius: 100px;
+    float: left;
+    margin-left: 110px;
+}
+.setChangeAvatar {
+    background-color: white;
+    color: #0095f6;
+    border: none;
+    cursor: pointer;
+    margin-right: 85px;
+}
+.border_between {
+    margin: 0 auto;
+    width: 510px;
+    padding-top: 40px;
+    border-bottom: 1px solid gray;
+}
+input[type="file"] {
+    display: none;
+}
+.textField {
+    height: 35px;
+    padding: 7px;
+    box-sizing: border-box;
+    box-shadow: inset 0 1px 5px rgb(0 0 0 / 20%);
+    border: 1px solid #ccc;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+}
+.set02 {
+    padding-top: 30px;
+}
+.set03 {
+    padding-top: 30px;
+    margin-left: 80px;
+}
+.set04 {
+    padding-top: 30px;
+
+}
+.reminder {
+    color: gray;
+}
+.SaveBtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    margin: 15px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 50%;
+    transition: all 0.3s ease 0s;
+}
+
+.SaveBtn:hover {
+    background-color: #53a156;
+}
+

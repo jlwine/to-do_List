@@ -1,5 +1,8 @@
 <?php
 session_start();
+
+$idUser = $_GET['id'];      
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -22,9 +25,9 @@ session_start();
         </nav>
     </header>
     <div class="container">
-        <img style="border-radius: 50px;" src="<?=$_SESSION['user']['avatar'] ?>" width="200" height="188" alt="">
+        <img style="border-radius: 50px;" src="<?=$_SESSION['user']['avatar']?>" width="200" height="188" alt="">
         <br>
-        <h2 style="margin: 10px 0;" class="login"><b><?= $_SESSION['user']['login'] ?></b></h2></h2>
+        <h2 style="margin: 10px 0;" class="login"><b><?= $_SESSION['user']['login']?></b></h2></h2>
         <br>
         <div class="options">
             <div class="email">
@@ -34,7 +37,7 @@ session_start();
                 <a href="index.php?id=<?=$_SESSION['user']['id']; ?>" class="my_tasks">Мои задачи</a><br>
             </div>
             <div class="profile_options">
-                <a href="#" class="profile_style">Настройки профиля</a><br>
+                <a href="profileSettings.php?id=<?=$_SESSION['user']['id']; ?>" class="profile_style">Настройки профиля</a><br>
             </div>
             <div class="exitBtn">
                 <a href="auth.php" class="logout">Выйти</a>
