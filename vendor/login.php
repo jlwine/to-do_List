@@ -28,5 +28,5 @@
 
     } else {
         $_SESSION['message'] = 'Не верная почта или пароль';
-        header('Location: ../auth.php');
+        header('Location: ../index.php');
     }

@@ -40,7 +40,7 @@ $idUser = $_GET['id'];
                 <a href="profileSettings.php?id=<?=$_SESSION['user']['id']; ?>" class="profile_style">Настройки профиля</a><br>
             </div>
             <div class="exitBtn">
-                <a href="auth.php" class="logout">Выйти</a>
+                <a href="vendor/logout.php" class="logout">Выйти</a>
             </div>
         </div>
     </div>

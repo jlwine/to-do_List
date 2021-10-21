@@ -22,7 +22,7 @@
 
         mysqli_query($connect, "INSERT INTO `users` (`id`, `email`, `login`, `pass`, `avatar`) VALUES (NULL, '$email', '$login', '$pass', '$path')");
         $_SESSION['message'] = 'Вы успешно зарегистрировались';
-        header('Location: ../auth.php');
+        header('Location: ../index.php');
 
     } else {
         $_SESSION['message'] = 'Пароли не совпадают';

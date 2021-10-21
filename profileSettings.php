@@ -5,6 +5,10 @@ session_start();
         $login = $_POST['login'];
         $email = $_POST['email'];
         $avatar = $_POST['avatar'];
+        
+        
+
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -26,7 +30,7 @@ session_start();
             </ul>
         </nav>
     </header>
-<form action="update.php?id=<?=$idUser = $_GET['id'];?>" method="post" enctype="multipart/form-data">
+<form action="vendor/update.php?id=<?=$idUser = $_GET['id'];?>" method="post" enctype="multipart/form-data">
     <div class="container">
         <p class="tittleSettings">Редактирование профиля</p><br>
         <div class="set01">
@@ -54,9 +58,9 @@ session_start();
             <input type="password" class="textField" maxlength="25" size="25">
         </div>
         <div class="border_between"></div>
-        <button type="submit" class="SaveBtn" name="password">Сохранить</button>
+        <button type="submit" class="SaveBtn" name="send">Сохранить</button>
         <?php
-        // $query = $pdo -> query("UPDATE `users` SET `login` = '{$_POST['login']}',`email` = '{$_POST['email']}', `avatar` = '{$_POST['avatar']}' WHERE `ID`={$_GET['id']}");
+            
         ?>
     </div>
 </form>

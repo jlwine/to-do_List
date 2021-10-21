@@ -1,4 +1,4 @@
 <?php
-    session_start();
-    unset($_SESSION['user']);
-    header('Location: auth.php');
+    session_abort();
+    header('Location: ../index.php');
+    
