@@ -17,6 +17,35 @@ li, a, button {
     color: #edf0f1;
     text-decoration: none;
 }
+.Register {
+    border-radius: 2px;
+    border: 1px solid #d5e50d;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out 0s;
+}
+.Register:hover {
+    background-color: #edff10;
+    color: black;
+}
+.profile_avatar {
+    position: absolute;
+    right: 390px;
+}
+.nickname {
+    position: absolute;
+    right: 310px;
+    transition: all 0.3s ease-in-out 0s;
+}
+button {
+    padding: 9px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.nickname:hover{
+    color: #FBF37C;
+}
 header {
     display: flex;
     justify-content: space-between;
@@ -115,31 +144,3 @@ header {
     color: red;
     font-weight: bold;
 }
-
-/* .login {
-    color: #b25757;
-
-}
-.email {
-    float: left;
-    padding: 15px 40px 15px 50px;
-    color: black;
-    display: flex;
-}
-.emailUser {
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 0px 0px 10px;
-}
-
-.my_tasks {
-    display: flex;
-    padding: 15px;
-    justify-content: center;
-    color: #b25757;
-}
-.my_tasks:hover {
-    background-color: #c5c5c5;
-    color: red;
-    font-weight: bold;
-} */

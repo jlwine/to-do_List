@@ -14,5 +14,5 @@
     mysqli_query($connect, "INSERT INTO `tasks` (`id`, `id_user`, `task`) VALUES (NULL, '$id_user', '$task')");
 
 
-    header("Location: ../index.php?id=" . $id_user);
+    header("Location: ../main.php?id=" . $id_user);
 ?>

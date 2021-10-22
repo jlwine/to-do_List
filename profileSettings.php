@@ -21,15 +21,9 @@ session_start();
     <link rel="stylesheet" href="profileSet.css"
 </head>
 <body>
-    <header class="header">
-        <img class="logo" src="img/logo.png" alt="logo" width="50" height="50">
-        <nav>
-            <ul class="nav__links">
-                <li><a href="#">Обо мне</a></li>
-                <li><a href="#">Обратная связь</a></li>
-            </ul>
-        </nav>
-    </header>
+<?php
+    require "blocks/header.php";
+?>
 <form action="vendor/update.php?id=<?=$idUser = $_GET['id'];?>" method="post" enctype="multipart/form-data">
     <div class="container">
         <p class="tittleSettings">Редактирование профиля</p><br>
@@ -55,12 +49,15 @@ session_start();
         </div>
         <div class="set04">
             <label>Введите пароль: </label>
-            <input type="password" class="textField" maxlength="25" size="25">
+            <input type="password" name="pass" class="textField" maxlength="25" size="25">
         </div>
         <div class="border_between"></div>
         <button type="submit" class="SaveBtn" name="send">Сохранить</button>
         <?php
-            
+            if ($_SESSION['message']) {
+                echo '<p class="msg">'. $_SESSION['message'] . ' </p>';
+            }
+            unset ($_SESSION['message']);
         ?>
     </div>
 </form>

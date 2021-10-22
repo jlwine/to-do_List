@@ -15,15 +15,9 @@ $idUser = $_GET['id'];
     <link rel="stylesheet" href="styleProfile.css"
 </head>
 <body>
-    <header class="header">
-        <img class="logo" src="img/logo.png" alt="logo" width="50" height="50">
-        <nav>
-            <ul class="nav__links">
-                <li><a href="#">Обо мне</a></li>
-                <li><a href="#">Обратная связь</a></li>
-            </ul>
-        </nav>
-    </header>
+<?php
+    require "blocks/header.php";
+?>
     <div class="container">
         <img style="border-radius: 50px;" src="<?=$_SESSION['user']['avatar']?>" width="200" height="188" alt="">
         <br>
@@ -34,7 +28,7 @@ $idUser = $_GET['id'];
                 <a href="#" class="email_color">Email: <?= $_SESSION['user']['email']?></a><br>
             </div>
             <div class="tasks">
-                <a href="index.php?id=<?=$_SESSION['user']['id']; ?>" class="my_tasks">Мои задачи</a><br>
+                <a href="main.php?id=<?=$_SESSION['user']['id']; ?>" class="my_tasks">Мои задачи</a><br>
             </div>
             <div class="profile_options">
                 <a href="profileSettings.php?id=<?=$_SESSION['user']['id']; ?>" class="profile_style">Настройки профиля</a><br>
