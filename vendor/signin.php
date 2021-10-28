@@ -12,6 +12,21 @@
     $pass_len = strlen($pass);
     $passRepeat = $_POST['psw-repeat'];
 
+
+    $check_user = mysqli_query($connect, "SELECT * FROM `users` WHERE `login` = '$login'");
+    if (mysqli_num_rows($check_user) > 0) {
+        $_SESSION['message'] = 'Такой логин уже занят';
+        header('Location: ../signup.php');
+        die('Такой логин уже занят');
+    }
+    $check_user = mysqli_query($connect, "SELECT * FROM `users` WHERE `email` = '$email'");
+    if (mysqli_num_rows($check_user) > 0) {
+        $_SESSION['message'] = 'Такой email уже используется';
+        header('Location: ../signup.php');
+        die('Такой логин уже занят');
+    }
+
+
     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
         //ok...
     } else {
