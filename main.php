@@ -12,6 +12,7 @@ $_SESSION['id'] = $id_user;
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>List of tasks</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleFooter.css">
 </head>
 <body>
     <?php
@@ -40,7 +41,9 @@ $_SESSION['id'] = $id_user;
         ?>
 
 </div>
-
+<?php
+        require "blocks/footer.php";
+?>
 
 </body>
 </html>

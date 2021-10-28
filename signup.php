@@ -1,5 +1,6 @@
 <?php
     session_start();
+    
 ?>
 <!doctype html>
 <html lang="ru">
@@ -10,6 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>List of tasks</title>
     <link rel="stylesheet" href="styleSign.css">
+    <link rel="stylesheet" href="styleFooter.css">
 </head>
 <body>
 <header class="header">

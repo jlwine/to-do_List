@@ -10,6 +10,7 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>List of tasks</title>
     <link rel="stylesheet" href="styleSign.css">
+    <link rel="stylesheet" href="styleFooter.css">
 </head>
 <body>
 <header class="header">
@@ -49,6 +50,8 @@ session_start();
         unset ($_SESSION['message']);
         ?>
     </form>
-
+        <?php
+        require "blocks/footer.php";
+        ?>
 </body>
 </html>
